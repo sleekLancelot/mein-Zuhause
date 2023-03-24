@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    jideMemoji,
   } from "../assets";
   
   export const navLinks = [
@@ -42,11 +43,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile App Developer",
       icon: mobile,
     },
     {
@@ -113,6 +114,12 @@ import {
       icon: docker,
     },
   ];
+
+  const personalInfo = {
+    name: 'Akinjide',
+    role: 'Software developer (React/ Typescript/ Node/ Golang)',
+    img: jideMemoji,
+  }
   
   const experiences = [
     {
@@ -262,4 +269,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, personalInfo, };

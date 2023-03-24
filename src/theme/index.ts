@@ -1,2 +1,2 @@
 export * from './motion'
-export * from './style'
+export * from './styles'
