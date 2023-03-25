@@ -116,7 +116,9 @@ import {
   ];
 
   const personalInfo = {
-    name: 'Akinjide',
+    firstName: 'Akinjide',
+    lastName: 'Oyekanmi',
+    fullName: 'Akinjide Oyekanmi',
     role: 'Software developer (React/ Typescript/ Node/ Golang)',
     img: jideMemoji,
   }

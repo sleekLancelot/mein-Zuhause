@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {
       colors: {
@@ -22,7 +23,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-image": "url('/src/assets/herobg.png')",
       },
     },
   },
