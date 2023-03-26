@@ -1,0 +1,1 @@
+export {default as HOCWrapper} from './Wrapper';

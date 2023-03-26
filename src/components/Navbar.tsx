@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={personalInfo.img} alt='avatar' className='w-9 h-9 object-contain' />
+          <img src={personalInfo.img} alt='avatar' className='w-9 h-9 object-contain touch-pinch-zoom' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             {personalInfo.firstName} &nbsp;
             <span className='sm:block hidden'> | {personalInfo.role}</span>

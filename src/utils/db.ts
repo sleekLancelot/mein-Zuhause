@@ -121,6 +121,7 @@ import {
     fullName: 'Akinjide Oyekanmi',
     role: 'Software developer (React/ Typescript/ Node/ Golang)',
     img: jideMemoji,
+    workSummary: '',
   }
   
   const experiences = [
