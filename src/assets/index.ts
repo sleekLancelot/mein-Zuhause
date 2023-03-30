@@ -22,10 +22,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import easyshare_logo from './company/easyshare_logo1.png'
+import sloovi_logo from './company/sloovi_logo1.jpg'
+import fundvine_logo from './company/fundvine_logo.png'
+import exaltapp_logo from './company/exaltapp_logo.jpg'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -53,10 +53,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  easyshare_logo,
+  sloovi_logo,
+  fundvine_logo,
+  exaltapp_logo,
   carrent,
   jobit,
   tripguide,

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Hero, Navbar, StarsCanvas } from './components';
 import { About, Contact } from './pages';
+import Experience from './pages/Experience';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </div>
 
         <About />
+        <Experience />
 
         <div className='relative z-0'>
           <Contact />

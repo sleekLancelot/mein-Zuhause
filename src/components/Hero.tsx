@@ -17,13 +17,16 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white font-clashDisplay`}>
+          <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>{personalInfo.firstName}</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 font-montserrat`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop Mobile Apps, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
+          {/* <p className={`${styles.heroSubText} mt-2 text-white-100 text-base sm:max-w-[600px] sm:whitespace-pre-line sm:z-10`}>
+            {personalInfo.workSummary}
+          </p> */}
         </div>
       </div>
 

@@ -8,7 +8,7 @@ import { HOCWrapper } from "../hoc";
 const About = () => {
   return (
     <>
-    <motion.div variants={textVariant()} className="font-clashDisplay">
+    <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>Introduction</p>
       <h2 className={styles.sectionHeadText}>About Me.</h2>
     </motion.div>
@@ -33,4 +33,4 @@ const About = () => {
   )
 }
 
-export default HOCWrapper(About, "about");
+export default HOCWrapper(About, About.name?.toLowerCase());
