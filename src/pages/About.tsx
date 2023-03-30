@@ -8,9 +8,9 @@ import { HOCWrapper } from "../hoc";
 const About = () => {
   return (
     <>
-    <motion.div variants={textVariant()} className="font-poppins">
+    <motion.div variants={textVariant()} className="font-clashDisplay">
       <p className={styles.sectionSubText}>Introduction</p>
-      <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <h2 className={styles.sectionHeadText}>About Me.</h2>
     </motion.div>
 
     <motion.p
