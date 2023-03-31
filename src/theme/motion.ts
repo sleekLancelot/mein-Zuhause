@@ -1,8 +1,8 @@
-export const textVariant = (delay?: number) => {
+export const textVariant = (delay?: number, hiddenY = -50, hiddenOpacity = 0) => {
     return {
       hidden: {
-        y: -50,
-        opacity: 0,
+        y: hiddenY,
+        opacity: hiddenOpacity,
       },
       show: {
         y: 0,

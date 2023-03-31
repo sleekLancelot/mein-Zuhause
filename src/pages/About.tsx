@@ -15,7 +15,7 @@ const About = () => {
 
     <motion.p
       variants={fadeIn("", "", 0.1, 1)}
-      className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] font-montserrat'
+      className={styles.sectionContent}
     >
       I'm a skilled software developer with experience in TypeScript and
       JavaScript, and expertise in frameworks like React, Node.js, and
@@ -26,7 +26,7 @@ const About = () => {
 
     <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service, index) => (
-        <AboutCard key={service.title} index={index} {...service} />
+        <AboutCard key={index} index={index} {...service} />
       ))}
     </div>
   </>

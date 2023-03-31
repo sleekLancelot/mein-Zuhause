@@ -15,6 +15,8 @@ import {
     git,
     figma,
     docker,
+    reactNative,
+    graphql,
     easyshare_logo,
     sloovi_logo,
     fundvine_logo,
@@ -24,6 +26,8 @@ import {
     tripguide,
     threejs,
     jideMemoji,
+    nextjs,
+    nestjs,
   } from "../assets";
   
   export const navLinks = [
@@ -34,6 +38,10 @@ import {
     {
       id: "experience",
       title: "Experience",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -55,7 +63,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Cloud computing",
       icon: creator,
     },
   ];
@@ -82,6 +90,14 @@ import {
       icon: reactjs,
     },
     {
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
+      name: "ReactNative",
+      icon: reactNative,
+    },
+    {
       name: "Redux Toolkit",
       icon: redux,
     },
@@ -94,8 +110,16 @@ import {
       icon: nodejs,
     },
     {
+      name: "Nest JS",
+      icon: nestjs,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
+    },
+    {
+      name: "GraphQL",
+      icon: graphql,
     },
     {
       name: "Three JS",
@@ -105,14 +129,14 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
 
   const personalInfo = {
@@ -221,7 +245,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Easyshare web",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -242,9 +266,9 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Easyshare web",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web based platform that enables sending and receiving money with crypto assets easy, safe and convenient.",
       tags: [
         {
           name: "react",

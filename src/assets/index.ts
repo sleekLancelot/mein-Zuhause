@@ -21,6 +21,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nextjs from './tech/Nextjs-logo.svg'
+import nestjs from './tech/nestjs.1024x1020.png'
+import reactNative from './tech/reactNative.svg'
+import graphql from './tech/graphql.svg'
 
 import easyshare_logo from './company/easyshare_logo1.png'
 import sloovi_logo from './company/sloovi_logo1.jpg'
@@ -30,6 +34,14 @@ import exaltapp_logo from './company/exaltapp_logo.jpg'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import courierApp_dashboard from './portfolio/courierApp_dashboard.png'
+import courierApp_mobile1 from './portfolio/courierApp_mobile1.png'
+import courierApp_mobile2 from './portfolio/courierApp_mobile2.png'
+import easyshareDesktop from './portfolio/easyshareDesktop.svg'
+import easyshare_mobile2 from './portfolio/easyshare_mobile2.png'
+import easyshare_mobile3 from './portfolio/easyshare_mobile3.png'
+import easyshare_walletHome from './portfolio/easyshare_walletHome.png'
 
 export {
   jideMemoji,
@@ -53,6 +65,10 @@ export {
   tailwind,
   typescript,
   threejs,
+  nextjs,
+  nestjs,
+  reactNative,
+  graphql,
   easyshare_logo,
   sloovi_logo,
   fundvine_logo,
@@ -60,4 +76,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  courierApp_dashboard,
+  easyshareDesktop,
+  easyshare_walletHome,
 };

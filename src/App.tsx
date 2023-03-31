@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Hero, Navbar, StarsCanvas } from './components';
-import { About, Contact } from './pages';
+import { About, Contact, Projects, Tech } from './pages';
 import Experience from './pages/Experience';
 
 function App() {
@@ -15,6 +15,8 @@ function App() {
 
         <About />
         <Experience />
+        <Tech />
+        <Projects />
 
         <div className='relative z-0'>
           <Contact />

@@ -1,3 +1,5 @@
 export {default as About} from './About'
 export {default as Experience} from './About'
+export {default as Tech} from './Tech'
+export {default as Projects} from './Projects'
 export * from './Contact'
