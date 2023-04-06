@@ -1,34 +1,25 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn, styles } from '../theme';
+import { ProjectProp } from '../utils';
 
-interface ProjectCardProp {
+interface ProjectCardProp extends ProjectProp {
 	index: number
-	project: {
-		name: string;
-		description: string;
-		tags: {
-			name: string;
-			color: string;
-		}[];
-		image: string;
-		source_code_link: string;
-	}
 }
 
 const ProjectCard = ({
   index,
-  project
+  ...project
 } : ProjectCardProp) => {
 	const isEven = (indexNum: number) => (indexNum + 1) % 2 === 0
 
   return (
 		<motion.div variants={fadeIn(`${isEven(index) ? 'right' : 'left'}`, "spring", index * 0.5, 0.75)}>
 			<div 
-				className={`flex flex-col lg:h-[380px] lg:justify-center lg:items-center lg:gap-14 lg:mb-20 cursor-pointer ${isEven(index) ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+				className={`flex flex-col lg:h-[380px] lg:justify-center lg:items-center lg:gap-14 lg:mb-24 ${isEven(index) ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
 			>
 				<div
-					className="sm:self-end sm:w-[80%] lg:h-full lg:basis-1/2"
+					className="sm:self-end sm:w-[80%] lg:h-full lg:basis-1/2 cursor-pointer"
 				>
 					<img
 						className='w-full h-full rounded-2xl hover:scale-105 transition-all duration-1000'
@@ -47,14 +38,40 @@ const ProjectCard = ({
 						{project?.tags.map((tag, index) => (
 							<p
 							key={index}
-							className={`text-[14px] ${tag.color}`}
+							className={`flex justify-center items-center text-[14px] ${tag.color}`}
 							>
-							#{tag.name}
+								{
+									!!tag?.img ?
+									<img
+										className={`w-[20px] h-[20px] mr-1`}
+										src={tag?.img}
+										alt={tag?.name}
+									/> :
+									<span>#</span>
+								}
+								{tag.name}
 							</p>
 						))}
 					</div>
 
-					<button className='rounded-xl mt-8 bg-white-100 text-black p-4 w-[105px] h-[40px] cursor-pointer flex justify-center items-center'>Visit</button>
+					<div className='flex flex-wrap justify-between items-center'>
+						{
+							project?.source_code_link &&
+							<a href={project?.source_code_link}>
+								<button className='rounded-xl mt-8 bg-white-100 text-black p-4 w-fit h-[40px] cursor-pointer flex justify-center items-center whitespace-nowrap'>Source code</button>
+							</a>
+						}
+
+						{
+							!!project?.live_links?.length &&
+							project?.live_links?.map((live_link, index) => (
+								<a key={index} href={live_link?.link}>
+									<button className='rounded-xl mt-8 bg-white-100 text-black p-6 w-[105px] h-[40px] cursor-pointer flex justify-center items-center whitespace-nowrap'>{`Visit ${live_link?.platform}`}</button>
+								</a>
+							))
+							
+						}
+					</div>
 				</div>
 			</div>
 		</motion.div>

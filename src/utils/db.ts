@@ -29,6 +29,7 @@ import {
     nextjs,
     nestjs,
   } from "../assets";
+import { ProjectProp } from "./types";
   
   export const navLinks = [
     {
@@ -243,7 +244,7 @@ import {
     },
   ];
   
-  const projects = [
+  const projects: Array<ProjectProp> = [
     {
       name: "Easyshare web",
       description:
@@ -252,18 +253,31 @@ import {
         {
           name: "react",
           color: "blue-text-gradient",
+          img: reactjs,
         },
         {
           name: "mongodb",
           color: "green-text-gradient",
+          img: mongodb,
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
+          img: tailwind,
         },
       ],
       image: carrent,
       source_code_link: "https://github.com/",
+      live_links: [
+        {
+          platform: "web",
+          link: "https://easyshare.global/",
+        },
+        {
+          platform: "mobile",
+          link: "play.google.com/store/apps/details?id=global.easyshare.app",
+        }
+      ],
     },
     {
       name: "Easyshare web",
@@ -273,6 +287,7 @@ import {
         {
           name: "react",
           color: "blue-text-gradient",
+          img: reactjs,
         },
         {
           name: "restapi",
@@ -281,10 +296,12 @@ import {
         {
           name: "scss",
           color: "pink-text-gradient",
+          img: css,
         },
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      live_links: [],
     },
     {
       name: "Trip Guide",
@@ -294,6 +311,7 @@ import {
         {
           name: "nextjs",
           color: "blue-text-gradient",
+          img: nextjs,
         },
         {
           name: "supabase",
@@ -302,10 +320,21 @@ import {
         {
           name: "css",
           color: "pink-text-gradient",
+          img: css,
         },
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      live_links: [
+        {
+          platform: "web",
+          link: "https://easyshare.global/",
+        },
+        {
+          platform: "mobile",
+          link: "play.google.com/store/apps/details?id=global.easyshare.app",
+        }
+      ],
     },
   ];
   
