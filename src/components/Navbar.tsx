@@ -62,6 +62,7 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+            <button className="buttonDownload whitespace-nowrap">Download cv</button>
         </ul>
 
         {/* Mobile Navigation */}
